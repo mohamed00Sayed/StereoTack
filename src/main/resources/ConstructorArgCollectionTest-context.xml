@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="compactDisc" class="soundsystem.collections.BlankDisc">
+  <bean id="compactDisc" class="xmlconf.com.sayed.stereo.soundsys.collections.BlankDisc">
     <constructor-arg value="Sgt. Pepper's Lonely Hearts Club Band" />
     <constructor-arg value="The Beatles" />
     <constructor-arg>
@@ -25,7 +25,7 @@
     </constructor-arg>
   </bean>
         
-  <bean id="cdPlayer" class="soundsystem.CDPlayer">
+  <bean id="cdPlayer" class="xmlconf.com.sayed.stereo.soundsys.CDPlayer">
     <constructor-arg ref="compactDisc" />
   </bean>
 

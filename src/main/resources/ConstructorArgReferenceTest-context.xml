@@ -3,9 +3,9 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="compactDisc" class="soundsystem.SgtPeppers" />
+  <bean id="compactDisc" class="xmlconf.com.sayed.stereo.soundsys.BrownDisc" />
         
-  <bean id="cdPlayer" class="soundsystem.CDPlayer">
+  <bean id="cdPlayer" class="xmlconf.com.sayed.stereo.soundsys.CDPlayer">
     <constructor-arg ref="compactDisc" />
   </bean>
 

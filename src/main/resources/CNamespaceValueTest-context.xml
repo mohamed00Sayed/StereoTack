@@ -4,11 +4,11 @@
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="compactDisc" class="soundsystem.BlankDisc"
+  <bean id="compactDisc" class="xmlconf.com.sayed.stereo.soundsys.BlankDisc"
         c:_0="Sgt. Pepper's Lonely Hearts Club Band" 
         c:_1="The Beatles" />
         
-  <bean id="cdPlayer" class="soundsystem.CDPlayer"
+  <bean id="cdPlayer" class="xmlconf.com.sayed.stereo.soundsys.CDPlayer"
         c:_-ref="compactDisc" />
 
 </beans>

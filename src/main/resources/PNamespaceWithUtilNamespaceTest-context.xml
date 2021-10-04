@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/util/spring-util.xsd">
 
   <bean id="compactDisc"
-        class="soundsystem.properties.BlankDisc"
+        class="xmlconf.com.sayed.stereo.soundsys.properties.BlankDisc"
         p:title="Sgt. Pepper's Lonely Hearts Club Band"
         p:artist="The Beatles"
         p:tracks-ref="trackList" />
@@ -31,7 +31,7 @@
   </util:list>
 
   <bean id="cdPlayer"
-        class="soundsystem.properties.CDPlayer"
+        class="xmlconf.com.sayed.stereo.soundsys.properties.CDPlayer"
         p:compactDisc-ref="compactDisc" />
 
 </beans>
