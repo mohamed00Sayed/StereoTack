@@ -4,10 +4,10 @@
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean class="soundsystem.CDConfig" />
+  <bean class="mixed.com.sayed.stereo.soundsys.CDConfig" />
 
   <bean id="cdPlayer"
-        class="soundsystem.CDPlayer"
+        class="auto.com.sayed.stereo.soundsys.CDPlayer"
         c:cd-ref="compactDisc" />
         
 </beans>

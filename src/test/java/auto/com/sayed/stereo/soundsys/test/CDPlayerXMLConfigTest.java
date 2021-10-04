@@ -14,11 +14,11 @@ import auto.com.sayed.stereo.soundsys.CompactDisc;
 import auto.com.sayed.stereo.soundsys.MediaPlayer;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations="classpath:WEB-INF/classes/soundsystem.xml")
+@ContextConfiguration(locations="classpath*:soundsystem.xml")
 public class CDPlayerXMLConfigTest {
 
   @Rule
-  public final SystemOutRule log = new SystemOutRule();
+  public final SystemOutRule log = new SystemOutRule().enableLog();
 
   @Autowired
   private MediaPlayer player;
@@ -36,7 +36,7 @@ public class CDPlayerXMLConfigTest {
     player.play();
     assertEquals(
         "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+        log.getLogWithNormalizedLineSeparator());
   }
 
 }

@@ -18,7 +18,7 @@ import auto.com.sayed.stereo.soundsys.MediaPlayer;
 public class CDPlayerTest {
 
   @Rule
-  public final SystemOutRule log = new SystemOutRule();
+  public final SystemOutRule log = new SystemOutRule().enableLog();
 
   @Autowired
   private MediaPlayer player;
@@ -36,7 +36,7 @@ public class CDPlayerTest {
     player.play();
     assertEquals(
         "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+        log.getLogWithNormalizedLineSeparator());
   }
 
 }

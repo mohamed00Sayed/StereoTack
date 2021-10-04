@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <bean id="compactDisc"
-        class="soundsystem.BlankDisc"
+        class="mixed.com.sayed.stereo.soundsys.BlankDisc"
         c:_0="Sgt. Pepper's Lonely Hearts Club Band"
         c:_1="The Beatles">
     <constructor-arg>
@@ -19,5 +19,6 @@
       </list>
     </constructor-arg>
   </bean>
+  <bean id="cdPlayer" class="auto.com.sayed.stereo.soundsys.CDPlayer" c:cd-ref="compactDisc"/>
 
 </beans>
