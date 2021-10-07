@@ -7,7 +7,7 @@
   <bean id="compactDisc"
         class="xmlconf.com.sayed.stereo.soundsys.properties.BlankDisc"
         p:title="Sgt. Pepper's Lonely Hearts Club Band"
-        p:artist="The Beatles">
+        p:artist="The Beatles"> <!-- no underscore at all at p: namespace -->
     <property name="tracks">
       <list>
         <value>Sgt. Pepper's Lonely Hearts Club Band</value>
